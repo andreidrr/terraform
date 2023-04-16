@@ -24,7 +24,7 @@ resource "digitalocean_droplet" "jenkies" {
 
 
 data "digitalocean_ssh_key" "ssh_key" {
-  name = var.ssh_key_name
+  name = "dop_v1_fb22bc28cc9ceb72405398e1182451166b39bb1c5272be7e55c783446da5637e"
 }
 
 
@@ -48,9 +48,9 @@ resource "digitalocean_kubernetes_cluster" "k8s" {
 #  default = ""
 #}
 
-variable "ssh_key_name" {
-  default = ""
-}
+#variable "ssh_key_name" {
+#  default = ""
+#}
 
 variable "region" {
   default = ""
